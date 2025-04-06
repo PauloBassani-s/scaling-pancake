@@ -12,6 +12,7 @@ jobs:
         uses: advanced-security/python-lint-code-scanning-action@v1
         with:
           linter: pylint
-          
+
       - name: Check out repository code
         uses: action/checkout@v4
+      #teerssgs
