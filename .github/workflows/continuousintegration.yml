@@ -13,10 +13,5 @@ jobs:
         with:
           linter: pylint
 
-      #- name: Check out repository code
-        #uses: action/checkout@v4
-
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.2.1
-
-      #teste do código novo
