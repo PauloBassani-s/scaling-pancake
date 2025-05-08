@@ -16,5 +16,12 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.2.1
 
+  discord:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/ckeckout@v4
+    - name: Run Discord Webhook
+      uses: johnmyhuy/actions-discord-git-webhook@main
+      with:
+        webhook_url: ${{ secrets.DISCORD_BOT}}
 
-        
